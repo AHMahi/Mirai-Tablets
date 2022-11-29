@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+  <meta name="designing webpages!!" content="Creating Web Applications"/>
+  <meta name="Webpage Me"         content="HTML, CSS" />
+  <meta name="author"             content="Abdul Hamid Mahi" />
+  <title>enquire</title>
+  <link href= "styles/style.css" rel="stylesheet"/>
+  <script src= "scripts/part2.js"></script>
+</head>
+
+
+<body>
+<form id="enquiry_form" action="payment.html" method="post">
+
+<!--This are the tags for my navigation bar which links to other pages-->
+
+<header>
+     <h1>Mirai Tablets</h1>
+	 <h2>Enquire</h2>
+	 <div id="center">
+     <nav>
+         <a class="lit" href="index.html">Home</a> 
+         <a class="lit" href="product.html">Product</a> 
+         <a class="lit" href="enquire.html">Enquire</a>
+         <a class="lit" href="payment.html">Payment</a>		 
+         <a class="lit" href="about.html">About</a>
+         <a class="lit" href="enhancements.html">Enhancements</a>
+		 <a class="lit" href="enhancements2.html">Enhancements-2</a>
+         
+      </nav>
+	  </div>
+      
+</header>
+
+<h2> Inquire about a particular product </h2>
+<br>
+<br>
+<div class="motto">
+   <p class="motto">In order to purchase you need to fill out the following form and provide necessary information first</p>
+   </div>
+<br>
+<br>
+<!-- This div section controls the users indentity input section in the form made in form.html page -->
+<div class="en-1">
+<fieldset class="bgcolor">   
+<legend> IDENTITY </legend>
+<label for="first_name">First Name: </label>
+<!-- This pattern only allows alphabetic inputs of both small or capital or mixed with a maximum length of 25 letters-->
+<input type="text" id="first_name" pattern="[A-Za-z]{1,25}" title="Maximum of 25 characters allowed for first_name" name="First Name">
+<br>
+<br>
+<label for="last_name">Last Name: </label>
+<input type="text" id="last_name" pattern="[A-Za-z]{1,25}" title="Maximum of 25 characters allowed for last_name" name="Last Name">
+<br>
+<br>
+<label for="email">Enter email: </label>
+<input type="email" id="email" title="Enter your mail" name="email">
+<br>
+<br>
+</fieldset>
+</div>
+<br>
+<br>
+<!-- This div section controls the users adresss details input section in the form made in form.html page -->
+<div class="en-2">
+<fieldset class="bgcolor">
+<legend> ADDRESS </legend>
+<label for="street_address">Street Address :</label>
+<!--This pattern only allows alphabetic inputs of both small or capital or mixed with a maximum length of 1 to 40 letters -->
+<input type="text" id="street_address" title="Enter your Street address" name="Street Address" >
+<br>
+<br>
+<label for="suburb">Suburb/Town  :</label>
+<input type="text" id="suburb" pattern="[A-Za-z]{1,20}" title="Enter your Suburb address" name="suburb" >
+<br>
+
+
+<p><label for="state">State:</label>
+            <select name="state" id="state" required="required">
+            <option value="none">Please Select</option>         
+            <option value="state">VIC</option>
+            <option value="state">NSW</option>
+            <option value="state">QLD</option>
+            <option value="state">NT</option>
+            <option value="state">WA</option>
+            <option value="state">SA</option>
+            <option value="state">TAS</option>
+            <option value="state">ACT</option>
+        	</select></p>
+			
+<p><label for="postcode">Postcode:</label>
+<input type="text" name="postcode" id="postcode" /></p>
+<!--<h3>State</h3>
+
+    <label for="VIC">VIC</label>
+    <input type="checkbox" name="VIC" id="VIC" checked >
+    <label for="NSW">NSW</label>
+    <input type="checkbox" name="NSW" id="NSW">
+    <label for="QLD">QLD</label>
+    <input type="checkbox" name="QLD" id="QLD">
+    <label for="NT">NT</label>
+    <input type="checkbox" name="NT" id="NT">
+    <label for="WA">WA</label>
+    <input type="checkbox" name="WA" id="WA">
+	<label for="SA">SA</label>
+    <input type="checkbox" name="SA" id="SA">
+	<label for="TAS">TAS</label>
+    <input type="checkbox" name="TAS" id="TAS">
+	<label for="ACT">ACT</label>
+    <input type="checkbox" name="ACT" id="ACT">-->
+	
+<br>
+<br>
+<br>
+</fieldset>
+</div>
+<br>
+<br>
+<!-- This div section controls the users contact details input section in the form made in form.html page -->
+<div class="en-3">
+<fieldset class="bgcolor">
+<legend>CONTACT</legend>	
+<br>
+<label for="number">Phone Number :</label>
+<!-- this tag allows the user to only input numeric values of 1 to 10 digits length -->
+<input type="text" id="number" pattern="\d{1,10}" name="Phone Number" placeholder="+*** **** ***" >
+<br>
+<br>
+<h3>Preffered Contact</h3>
+<input type="radio" name="contact" id="contact-1" value="email" checked>
+<label for="contact-1">E-Mail</label>
+<input type="radio" name="contact" id="contact-2" value="post">
+<label for="contact-2">Post</label>
+<input type="radio" name="contact" id="contact-3" value="phone">
+<label for="contact-3">Phone</label>
+<br>
+<br>
+</fieldset>
+</div>
+<br>
+<br>
+<div class="en-4">
+<!-- This div section controls the users product range input section in the form made in form.html page -->
+<fieldset class="bgcolor">
+<legend>PRODUCT RANGE :</legend>
+<label for="company">Product Company :</label>
+<select name="company" id="company" >
+<option value="none">Please Select</option>
+<option value="Apple">Apple</option>
+<option value="Lenovo">Lenovo Tablets</option>
+<option value="Asus">Asus Tablets</option>
+<option value="Samsung">Samsung Tablets</option>
+<option value="Xiaomi">Xiaomi</option>
+</select>
+<br>
+<br>
+<label for="product_code">Product Code :</label>
+<select name="product_code" id="product_code" >
+<option value="none">Please Select</option>
+<option value="12345">12345</option>
+<option value="23456">23456</option>
+<option value="34567">34567</option>
+<option value="45678">45678</option>
+<option value="56789">56789</option>
+<option value="57689">57689</option>
+</select>
+<br>
+<br>
+<label for="quantity">Product Quantity :</label>
+<input type="number" id="quantity" name="quantity" min="1" max="10">
+  
+
+    <h3>Additional Enhancements</h3>
+    <label for="Enhanced_safety">Enhanced safety</label>
+    <input type="checkbox" name="Enhanced safety" id="Enhanced_safety" checked >
+    <label for="rechargeable_battery">Built-in rechargeable battery</label>
+    <input type="checkbox" name="rechargeable_battery" id="rechargeable_battery">
+    <label for="1080p">1080-p Ips Panel</label>
+    <input type="checkbox" name="Ips_panel" id="1080p">
+    <label for="gesture">Hand Gesture Input</label>
+    <input type="checkbox" name="Hand_gesture" id="gesture">
+    <label for="120hz">120 Hz display</label>
+	<input type="checkbox" name="none" id="none">
+	<label for="none">None</label>
+    <input type="checkbox" name="12hz_display" id="120hz">
+	
+<br>
+<br>
+<label for="date_hire">Date of Purchase :</label>
+<input type="text" name="purchase_date" id="date_hire" placeholder="dd/mm/yy" pattern="\d{2}/\d{2}/\d{2}" >
+<br>
+<br> 
+<label for="feedback">Description Of Interest and Feedback</label><br>
+<textarea id="feedback" name="issue" placeholder="Write your description here....." rows="8" cols="40" ></textarea>
+<br>
+</fieldset>
+</div>
+<br>
+<br>
+
+<!-- submission and reset area tags -->
+<div class="en-5">
+<a href="payment.html"><button type="submit">Pay Now</button></a>
+
+<button type="reset">Reset Form</button>
+</div>
+
+
+</form> 
+
+<!-- footer section elements with copywrite information and navigation link-->
+	<footer>
+	<div class="footer">
+	<p>All pictures in this website are taken from <a href="https://www.startech.com.bd/"> Startechbd.com</a></p>
+	<p>&copy; Copyright 2021</p>
+		<p><a href="mailto:103521410@student.swin.edu,au">Mail-Us</a></p>
+	
+	<a href="#top"><img id="pic" src="images/up.png" width="55" alt="arrow icon"></a>
+	
+	</div>
+	</footer>
+   
+   
+</body>
+</html>

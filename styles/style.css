@@ -1,0 +1,192 @@
+/*
+filename: style.css
+author: AbdulHamid Mahi
+created: 3/20/2021
+last modified: 3/28/2021
+description: refers to folder index.html
+*/
+
+
+/* I used a background image which even if it is repeated it will still show a similar pattern without looking like it is repeated */
+html,body{
+	
+	background-image: url(../images/bg11.png);
+	position:relative;
+	background-repeat:repeat;
+	max-width:100%;
+	
+}
+
+/* properties to control the text written in the headings */
+
+h1 {color:#D7D6D7; font-size:5em; font-weight: 100; text-align:center; font-family: arial,sans-serif}
+
+h2 {color:#D7D6D7; font-size:3em; font-weight: 100; text-align:center; font-family: arial,sans-serif; text-align:center;}
+
+h3 {color:#D7D6D7; font-size:1.5em; font-weight: 100; font-family: arial,sans-serif}
+
+/* changes the text color to ash for the following selectors */
+
+p,dt,dd,legend,label{color:#D7D6D7;}
+
+/* a global element */
+
+* {font-family: calabri, sans-serif; color: #000000;}
+
+/* controls the style of the navigation bar used in every page */
+
+nav { background:#594848;  width:100%;padding:20px 10px;}
+
+nav a { width:120px;text-decoration: none; padding:20px 10px; border: none;font-size:20px ;color:white; font-family:arial;}
+
+.lit:hover {border-style: none; background-color:#4448D8;}
+
+/* takes the links to the center of the navigation bar */
+#center {text-align:center; }
+
+
+
+.bit:hover{ text-decoration: none;}
+
+/*changes the positioning and properties of P tags used in index.html page before the offer pictures*/
+.content {  padding:20px;
+            font-size: 60px;
+            font-weight: 100;
+			color: #D5D5DB;
+			margin-top: 24px;
+			margin-bottom:15px;
+			position:relative;		
+}
+
+/*changes the positioning and properties of P tags used in index.html page */
+.motto { position:relative;
+         left:20px;
+		 color:#D7D6D7;
+}
+
+/* controls the properties of the footer used in every page */
+footer{ position:relative;
+	top:400px;
+	text-align:center;
+	font-weight:100;
+	font-size:15px;
+    padding: 3px;
+    background-color:#ccc;
+    color: white;
+}
+
+/* child selectors used to specifically to change color of anchor and paragraph tags under the footer class */
+.footer a,p{color:#000000;}
+
+/* controls the properties of the sidebar used in product.html page */
+.sidebar2{position:relative;
+  padding: 1em 1em;
+  width: 25%;
+  float: right;
+  background-color: #555666;
+  right:20px;
+  bottom: 900px;
+
+}
+
+/* this tag controls the positioning of the white border area around product description used in product.html page */
+#container{ max-width:1200px;
+margin:auto;
+background:#f2f2f2;
+overflow-x:hidden;
+}
+
+/* this tag controls the positioning of the grey border area around under product pictures used in product.html page */
+.product{margin:5px;
+border:1px solid #ccc;
+float:left;
+width:390px;
+}
+
+/* this tag controls the positioning of the pictures used in product.html page */
+.product img{
+	width:100%;
+	height:auto;
+} 
+
+/* This tag provides padding around text and changes their color to black used in product.html product description area */
+.desc{
+	padding:15px;
+	color:#000000;
+}
+
+
+/* this tag controls the positioning of the pictures used in index.html page */
+.offer {position:relative;
+top:80px;
+left:30px;
+}
+
+/* this id changes properties of the image used in about.html page */
+#me {position:relative;
+    top:50px;
+    float:right;
+	padding:20px;
+	border:solid 5px;
+	border-color:#120303;
+	background-color:white;
+	}
+
+/* this id changes properties of the table tag used in about.html page */	
+#timetable {border:solid 2px;
+border-color:#100A0A;
+background-color:#f2f2f2;
+border-collapse:collapse;
+}
+
+th,td{
+  border: 1px solid black;
+  padding:10px;
+  border-spacing:10px;
+}
+/* used in alternate rows of table made in about.html */
+tr:nth-child(even) {
+	background-color: #b2beb5;
+}
+
+.color li{color:#D7D6D7;}
+/* This modifies the arrow icon in footer of every page */
+
+#pic {position:absolute;
+top:35px;
+right:100px;
+}
+
+.ash li{color:#D7D6D7;}
+
+/*this ash class selector changes the text color to grey used in almost every page*/
+.ash {color:#D7D6D7;}
+
+/*this selector has been normally used with every fieldset tags*/
+.bgcolor{background-color:rgb(0,0,0,0.35);
+padding:20px;
+cursor:pointer;
+}
+
+/*this are css properties for modifying the submit button in enquire.html page */
+
+button{
+	background-color:#3BAF9F;
+	display:block;
+	margin:20px 0px 0px 20px;
+	text-align:center;
+	border-radius:12px;
+	border:2px solid #366473;
+	padding:14px 110px;
+	outline:none;
+	color:white;
+	cursor:pointer;
+}
+
+button:hover{
+	background-color:#5390F5;
+}
+
+
+
+	         

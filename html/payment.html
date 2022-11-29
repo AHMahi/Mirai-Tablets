@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="designing webpages!!" content="Creating Web Applications"/>
+  <meta name="Webpage Me"         content="HTML, CSS" />
+  <meta name="author"             content="Abdul Hamid Mahi" />
+  <title>index</title>
+  <link href= "styles/style.css" rel="stylesheet"/>
+  <script src= "scripts/gg.js"></script>
+  <script src= "scripts/payment.js"></script>
+ </head> 
+
+
+<body>
+ 
+<!--this are the tags for my navigation bar which links to other pages-->
+   <header>
+     <h1 id="top">Mirai Tablets</h1>
+	 <h2>Product Payment</h2>
+	 <div id="center">
+     <nav id="hov">
+         <a class="lit" href="index.html">Home</a> 
+         <a class="lit" href="product.html">Product</a> 
+         <a class="lit" href="enquire.html">Enquire</a>
+         <a class="lit" href="payment.html">Payment</a>		 
+         <a class="lit" href="about.html">About</a>
+         <a class="lit" href="enhancements.html">Enhancements</a>
+		 <a class="lit" href="enhancements2.html">Enhancements-2</a>
+		 
+      </nav>
+	  </div>
+	  </header>
+<br>
+<br>
+<br>
+<br>
+<form id="payment">
+	<fieldset class="bgcolor">
+		<legend><strong class="ash">Customer Details :</strong></legend>
+		<p class="ash">Your Name: <span id="confirm_name"></span></p>
+		<!--<p class="ash">Your E-mail: <span id="confirm_email"></span></p>
+		<p class="ash">Your address: <span id="confirm_address"></span></p>
+		<p class="ash">Your suburb: <span id="confirm_suburb"></span></p>
+		<p class="ash">Your state: <span id="confirm_state"></span></p>
+		<p class="ash">Your postcode: <span id="confirm_postcode"></span></p>
+		<p class="ash">Your product company: <span id="confirm_company"></span></p>
+		<p class="ash">Your product code: <span id="confirm_product_code"></span></p>
+		<p class="ash">Your product quantity: <span id="confirm_quantity"></span></p>-->
+		<input type="hidden" name="firstname" id="firstname"/>
+		<!--<input type="hidden" name="lastname" id="lastname"/>
+		<input type="hidden" name="email" id="email"/>
+		<input type="hidden" name="address" id="address"/>
+		<input type="hidden" name="state" id="state"/>
+		<input type="hidden" name="postcode" id="postcode"/>
+		<input type="hidden" name="company" id="company"/>
+		<input type="hidden" name="product_code" id="product_code"/>
+		<input type="hidden" name="quantity" id="quantity"/>-->
+</fieldset>
+		
+<fieldset class="bgcolor">
+<legend><strong class="ash">Credit Card Payment Details :</strong></legend>
+<label for="company">Credit Card Type :</label>
+<select name="apple" id="company" required>
+<option value="">Please Select</option>
+<option value="Visa">Visa</option>
+<option value="Mastercard">Mastercard</option>
+<option value="American Express">American Express</option>
+</select>
+<br>
+<br>
+<label for="C_name">Name on credit card : </label>
+<!-- This pattern only allows alphabetic inputs of both small or capital or mixed with a maximum length of 25 letters-->
+<input type="text" id="C_name" pattern="[A-Za-z]{1,25}" title="Maximum of 25 characters allowed for C_name" name="credit card Name" required>
+<br>
+<br>
+<label for="Cnumber">Credit Card Number :</label>
+<!-- this tag allows the user to only input numeric values of 1 to 10 digits length -->
+<input type="text" id="Cnumber" pattern="\d{15,16}" name="Credit Card Number" required>
+<br>
+<br>
+<label for="date">Credit card expiry Date :</label>
+<input type="text" name="Expiry date" id="date" placeholder="mm/yy" pattern="\d{2}/\d{2}" required>
+<br>
+<br>
+<label for="CVV">Card verification value :</label>
+<input type="text" id="CVV" pattern="\d{3}" name="Card verification value" placeholder="***" required>
+<br>
+<br>
+</fieldset>
+
+        <button type="submit">Complete Payment</button>
+		<button type="button" id="cancelButton">Cancel</button>
+</form>
+
+<!-- footer section elements with copywrite information and navigation link-->
+	<footer>
+	<div class="footer">
+	<p>All pictures in this website are taken from <a href="https://www.startech.com.bd/"> Startechbd.com</a></p>
+	<p>&copy; Copyright 2021</p>
+		<p><a href="mailto:103521410@student.swin.edu,au">Mail-Us</a></p>
+	
+	<a href="#top"><img id="pic" src="images/up.png" width="55" alt="arrow icon"></a>
+	
+	</div>
+	</footer>
+
+	
+	  </body>
+	  </html>
+	 
+	  
+	  
+	  
+      
+   
+  
